@@ -1,0 +1,112 @@
+@charset "utf-8";
+.boxs {
+    transform-style: preserve-3d;
+    transform-origin: 50% 50%;
+    width: 200px;
+    height: 800px;
+    line-height: 800px;
+    font-size: 50px;
+    margin: 100px auto 0;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    animation-name: zhu;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform: perspective(370px);
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8,
+.box9,
+.box10,
+.box11,
+.box12 {
+    width: 200px;
+    height: 800px;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+
+.box1 {
+    background-color: #ac451c;
+    transform: rotateY(-90deg) translateZ(370px);
+}
+
+.box2 {
+    background-color: #d32323;
+    transform: rotateY(90deg) translateZ(370px);
+}
+
+.box3 {
+    background-color: #cee217;
+    transform: translateZ(-370px);
+}
+
+.box4 {
+    background-color: #34570c;
+    transform: translateZ(370px);
+}
+
+.box5 {
+    background-color: #05fbdb;
+    transform: rotateY(150deg) translateZ(370px);
+}
+
+.box6 {
+    background-color: #7841f7;
+    transform: rotateY(-30deg) translateZ(370px);
+}
+
+.box7 {
+    background-color: #e779fd;
+    transform: rotateY(-150deg) translateZ(370px);
+}
+
+.box8 {
+    background-color: #a35357;
+    transform: rotateY(30deg) translateZ(370px);
+}
+
+.box9 {
+    background-color: #c5a89c;
+    transform: rotateY(120deg) translateZ(370px);
+}
+
+.box10 {
+    background-color: #555454;
+    transform: rotateY(-60deg) translateZ(370px);
+}
+
+.box11 {
+    background-color: #102549;
+    transform: rotateY(-120deg) translateZ(370px);
+}
+
+.box12 {
+    background-color: #5bad84;
+    transform: rotateY(60deg) translateZ(370px);
+}
+
+@keyframes zhu {
+    from {
+        transform: rotateY(0deg)
+    }
+    to {
+        transform: rotateY(360deg)
+    }
+}
+
+img {
+    width: 200px;
+    height: 800px;
+}
