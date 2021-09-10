@@ -1,12 +1,16 @@
 @charset "utf-8";
+html {
+    font-size: 8px;
+}
+
 .boxs {
     transform-style: preserve-3d;
     transform-origin: 50% 50%;
-    width: 200px;
-    height: 800px;
-    line-height: 800px;
-    font-size: 50px;
-    margin: 100px auto 0;
+    width: 12.5rem;
+    height: 50rem;
+    line-height: 50rem;
+    font-size: 3.125rem;
+    margin: 6.25rem auto 0;
     position: relative;
     z-index: 0;
     text-align: center;
@@ -14,7 +18,7 @@
     animation-duration: 12s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    transform: perspective(370px);
+    transform: perspective(23.125rem);
 }
 
 .box1,
@@ -29,8 +33,8 @@
 .box10,
 .box11,
 .box12 {
-    width: 200px;
-    height: 800px;
+    width: 12.5rem;
+    height: 50rem;
     position: absolute;
     z-index: 0;
     top: 0;
@@ -39,62 +43,62 @@
 
 .box1 {
     background-color: #ac451c;
-    transform: rotateY(-90deg) translateZ(370px);
+    transform: rotateY(-90deg) translateZ(23.125rem);
 }
 
 .box2 {
     background-color: #d32323;
-    transform: rotateY(90deg) translateZ(370px);
+    transform: rotateY(90deg) translateZ(23.125rem);
 }
 
 .box3 {
     background-color: #cee217;
-    transform: translateZ(-370px);
+    transform: translateZ(-23.125rem);
 }
 
 .box4 {
     background-color: #34570c;
-    transform: translateZ(370px);
+    transform: translateZ(23.125rem);
 }
 
 .box5 {
     background-color: #05fbdb;
-    transform: rotateY(150deg) translateZ(370px);
+    transform: rotateY(150deg) translateZ(23.125rem);
 }
 
 .box6 {
     background-color: #7841f7;
-    transform: rotateY(-30deg) translateZ(370px);
+    transform: rotateY(-30deg) translateZ(23.125rem);
 }
 
 .box7 {
     background-color: #e779fd;
-    transform: rotateY(-150deg) translateZ(370px);
+    transform: rotateY(-150deg) translateZ(23.125rem);
 }
 
 .box8 {
     background-color: #a35357;
-    transform: rotateY(30deg) translateZ(370px);
+    transform: rotateY(30deg) translateZ(23.125rem);
 }
 
 .box9 {
     background-color: #c5a89c;
-    transform: rotateY(120deg) translateZ(370px);
+    transform: rotateY(120deg) translateZ(23.125rem);
 }
 
 .box10 {
     background-color: #555454;
-    transform: rotateY(-60deg) translateZ(370px);
+    transform: rotateY(-60deg) translateZ(23.125rem);
 }
 
 .box11 {
     background-color: #102549;
-    transform: rotateY(-120deg) translateZ(370px);
+    transform: rotateY(-120deg) translateZ(23.125rem);
 }
 
 .box12 {
     background-color: #5bad84;
-    transform: rotateY(60deg) translateZ(370px);
+    transform: rotateY(60deg) translateZ(23.125rem);
 }
 
 @keyframes zhu {
@@ -107,6 +111,6 @@
 }
 
 img {
-    width: 200px;
-    height: 800px;
+    width: 12.5rem;
+    height: 50rem;
 }
