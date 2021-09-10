@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .boxs {
+            width: 200px;
+            height: 200px;
+            margin: 200px auto 0;
+            position: relative;
+            z-index: 0;
+            transform-style: preserve-3d;
+            transform-origin: 50% 50%;
+            /* transform: perspective(400px); */
+            animation: hf 9s linear infinite;
+        }
+        
+        .boxs img {
+            width: 200px;
+            height: 200px;
+        }
+        
+        .box1,
+        .box2,
+        .box3,
+        .box4,
+        .box5,
+        .box6 {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            z-index: 0;
+            top: 0;
+            left: 0;
+        }
+        
+        .box1 {
+            transform: rotateY(-90deg) translateZ(100px);
+            opacity: 1;
+        }
+        
+        .box2 {
+            transform: rotateY(90deg) translateZ(100px);
+            opacity: 1;
+        }
+        
+        .box3 {
+            transform: rotateX(90deg) translateZ(100px);
+            opacity: 1;
+        }
+        
+        .box4 {
+            transform: rotateX(-90deg) translateZ(100px);
+            opacity: 1;
+        }
+        
+        .box5 {
+            transform: translateZ(-100px);
+            opacity: 1;
+        }
+        
+        .box6 {
+            transform: translateZ(100px);
+            opacity: 1;
+        }
+        
+        @keyframes hf {
+            from {
+                transform: rotateX(0) rotateY(0);
+            }
+            to {
+                transform: rotateX(360deg) rotateY(360deg);
+            }
+        }
+        
+        body {
+            background-color: #000;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <div class="boxs">
+        <div class="box1"><img src="./../../zuoye.img/微信图片_20210818112458.jpg" alt=""></div>
+        <div class="box2"><img src="./../../zuoye.img/0.2.jpg" alt=""></div>
+        <div class="box3"><img src="./../../zuoye.img/0.3.jpg" alt=""></div>
+        <div class="box4"><img src="./../../zuoye.img/0.4.jpg" alt=""></div>
+        <div class="box5"><img src="./../../zuoye.img/0.5.jpg" alt=""></div>
+        <div class="box6"><img src="./../../zuoye.img/0.6.jpg" alt=""></div>
+
+    </div>
+</body>
+
+</html>
